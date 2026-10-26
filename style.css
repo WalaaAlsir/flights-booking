@@ -1,0 +1,378 @@
+/* التنسيقات العامة */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f2b48; /* خلفية الموقع الداكنة الجذابة */
+    color: #ffffff;
+}
+
+/* تنسيق الهيدر */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(15, 43, 72, 0.95);
+}
+
+/* تنسيق اللوجو والنص عمودياً */
+.main-header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.main-header .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* شكل دائر تام */
+    object-fit: cover;  /* القص والضبط التلقائي */
+}
+
+.main-header .logo .brand-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* تنسيق أزرار القائمة (الأزرار البيضاء) */
+.nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.nav-links .nav-btn {
+    background-color: #ffffff;
+    color: #0f2b48;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links .nav-btn:hover {
+    background-color: #e0e6ed;
+    transform: translateY(-2px);
+}
+
+/* قسم البحث الرئيسي */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 20px;
+}
+
+.search-container {
+    background: #ffffff;
+    color: #333;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 850px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.search-title {
+    color: #0f2b48;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.search-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* عناصر نموذج البحث */
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.field-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #4a5568;
+}
+
+.field-group input, 
+.field-group select {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f8fafc;
+    font-size: 0.9rem;
+}
+
+.search-btn {
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0369a1;
+}
+
+/* قسم أشهر الوجهات (بطاقات العروض) */
+.destinations-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.destinations-section h2 {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+/* الفوتر */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #081726;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: 30px;
+}
+/*تنسيقات اضافية لصفحة الرحلات */
+/* تنسيق الأقسام الداخلية للصفحات */
+.page-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.page-content .subtitle {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+/* تنسيق قائمة كروت الرحلات في صفحة الرحلات */.flights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.flight-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    transition: transform 0.3s ease;
+}
+
+.flight-card:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.flight-info h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.flight-info p {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+
+.flight-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.flight-action .price {
+    font-weight: bold;
+    color: #38bdf8;
+    font-size: 1rem;
+}
+/*نهاية تنسيق صفحة الرحلات*/
+
+/* بداية تنسيق صفحة العروض */
+/*شبكه العروض*/
+.offer-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.offer-card{
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 25px 20px 20px 20px;
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease;
+}
+.offer-card:hover{
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.12);
+}
+.offer-card .badge{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ef4444;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.offer-card h3{
+    color: #ffffff;
+    font-size: 1.15rem;
+}
+.offer-card p{
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+.oofer-price{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-top: 5px;
+}
+/*نهاية تنسيق صفحة العروض*/
+/*بداية تنسيقات صفحة تواصل معنا*/
+/* تنسيق نموذج صفحة تواصل معنا */
+.contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contact-form .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #cbd5e1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #94a3b8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #38bdf8;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+/*نهاية تنسيقات الصفحة */

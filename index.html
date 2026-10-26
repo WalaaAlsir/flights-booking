@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زينيث للطيران - حجز التذاكر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر الرئيسي -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.jpg" alt="شعار زينيث">
+            <span class="brand-name">زينيث للطيران</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html" class="nav-btn active">الرئيسية</a>
+            <a href="flights.html" class="nav-btn">الرحلات</a>
+            <a href="offers.html" class="nav-btn">العروض</a>
+            <a href="contact.html" class="nav-btn">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- قسم الهيرو ونموذج البحث -->
+    <section class="hero-section">
+        <div class="search-container">
+            <h1 class="search-title">سافر مع زينيث إلى وجهتك المفضلة</h1>
+            <p class="search-subtitle">أبحث عن أفضل أسعار الرحلات الجوية وخطط لرحلتك بسبولة</p>
+
+            <form class="search-form">
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="from">من</label>
+                        <input type="text" id="from" placeholder="مدينة المغادرة (مثال: الرياض)">
+                    </div>
+                    <div class="field-group">
+                        <label for="to">إلى</label>
+                        <input type="text" id="to" placeholder="وجهة الوصول (مثال: دبي)">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="dept-date">تاريخ المغادرة</label>
+                        <input type="date" id="dept-date">
+                    </div>
+                    <div class="field-group">
+                        <label for="return-date">تاريخ العودة</label>
+                        <input type="date" id="return-date">
+                    </div>
+                    <div class="field-group">
+                        <label for="class">درجة السفر</label>
+                        <select id="class">
+                            <option value="economy">الدرجة السياحية</option>
+                            <option value="business">درجة الأعمال</option>
+                            <option value="first">الدرجة الأولى</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="search-btn">البحث عن الرحلات</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- قسم أشهر الوجهات السياحية (ملء المساحة الفارغة) -->
+    <section class="destinations-section">
+        <h2>أشهر الوجهات السياحية</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>دبي</h3>
+                <p>ابتداءً من 499 ر.ق</p>
+            </div>
+            <div class="card">
+                <h3>القاهرة</h3>
+                <p>ابتداءً من 699 ر.ق</p>
+            </div>
+            <div class="card">
+                <h3>إسطنبول</h3>
+                <p>ابتداءً من 899 ر.ق</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (تذييل الصفحة) -->
+   
+    <footer class="main-footer">
+        <p>جميع الحقوق محفوظه &copy; 2026 | Zenith Airlines</p>
+    </footer>
+
+</body>
+</html>
